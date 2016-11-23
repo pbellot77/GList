@@ -14,6 +14,7 @@
 		BA35F2CE1DE60C00006CFF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35F2CC1DE60C00006CFF63 /* LaunchScreen.storyboard */; };
 		BA35F2D91DE60C00006CFF63 /* GListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35F2D81DE60C00006CFF63 /* GListTests.swift */; };
 		BA35F2E41DE60C00006CFF63 /* GListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35F2E31DE60C00006CFF63 /* GListUITests.swift */; };
+		BA35F2F21DE615C6006CFF63 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35F2F11DE615C6006CFF63 /* TextInputTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		BA35F2C01DE60C00006CFF63 /* GList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35F2C31DE60C00006CFF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA35F2C51DE60C00006CFF63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA35F2C51DE60C00006CFF63 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		BA35F2C81DE60C00006CFF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA35F2CA1DE60C00006CFF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA35F2CD1DE60C00006CFF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		BA35F2DF1DE60C00006CFF63 /* GListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35F2E31DE60C00006CFF63 /* GListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GListUITests.swift; sourceTree = "<group>"; };
 		BA35F2E51DE60C00006CFF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA35F2F11DE615C6006CFF63 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; name = TextInputTableViewCell.swift; path = ../TextInputTableViewCell.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				BA35F2C31DE60C00006CFF63 /* AppDelegate.swift */,
 				BA35F2C51DE60C00006CFF63 /* ViewController.swift */,
+				BA35F2F11DE615C6006CFF63 /* TextInputTableViewCell.swift */,
 				BA35F2C71DE60C00006CFF63 /* Main.storyboard */,
 				BA35F2CA1DE60C00006CFF63 /* Assets.xcassets */,
 				BA35F2CC1DE60C00006CFF63 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA35F2C61DE60C00006CFF63 /* ViewController.swift in Sources */,
+				BA35F2F21DE615C6006CFF63 /* TextInputTableViewCell.swift in Sources */,
 				BA35F2C41DE60C00006CFF63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
