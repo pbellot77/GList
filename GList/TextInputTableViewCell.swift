@@ -9,7 +9,7 @@
 import UIKit
 
 class TextInputTableViewCell: UITableViewCell {
-    
+
   @IBOutlet weak var textField: UITextField!
 
   func configure(text: String?, placeholder: String) {
@@ -19,4 +19,11 @@ class TextInputTableViewCell: UITableViewCell {
     textField.accessibilityValue = text
     textField.accessibilityLabel = placeholder
   }
+  
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+  }
+
 }
