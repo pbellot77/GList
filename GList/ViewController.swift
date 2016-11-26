@@ -17,9 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   @IBOutlet weak var tableView: UITableView!
  
     
-    override func viewDidLoad() {
-      super.viewDidLoad()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
@@ -29,8 +29,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
     
     cell?.textLabel?.text = items[indexPath.row]
-    cell?.textLabel?.textColor = UIColor.green
+    cell?.textLabel?.textColor = UIColor.purple
     return cell!
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let selectedRow = tableView.cellForRow(at: indexPath)
+    
+    if selectedRow?.accessoryType == UITableViewCellAccessoryType.none {
+      selectedRow?.accessoryType = UITableViewCellAccessoryType.checkmark
+      selectedRow?.tintColor = UIColor.green
+    } else {
+      selectedRow?.accessoryType = UITableViewCellAccessoryType.none
+    }
+  }
+  
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    let deletedRow = tableView.cellForRow(at: indexPath)
+    
+    if editingStyle == .delete {
+      items.remove(at: indexPath.row)
+      tableView.deleteRows(at: [indexPath], with: .automatic)
+      deletedRow?.accessoryType = UITableViewCellAccessoryType.none
+    }
   }
   
     @IBAction func addButton(_ sender: Any) {
