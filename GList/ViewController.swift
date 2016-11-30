@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  
-  var items = [String]()
   
   @IBOutlet weak var priceLabel: UILabel!
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var tableView: UITableView!
- 
-    
+  
+  var items = [String]()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
