@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var tableView: UITableView!
   
+  let disposeBag = DisposeBag()
   var items = [String]()
   
   override func viewDidLoad() {
@@ -61,7 +62,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       items.append(newItem!)
       textField.resignFirstResponder()
       textField.text = ""
-      textField.placeholder = "Add Item"
+      textField.placeholder = "Enter a new item here"
       tableView.reloadData()
     }
 }
