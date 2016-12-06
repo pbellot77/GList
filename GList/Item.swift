@@ -10,9 +10,10 @@ import Foundation
 import RealmSwift
 
 class item: Object {
+  dynamic var itemID = NSUUID().uuidString
   dynamic var name = ""
   
-  override static func indexedProperties() -> [String] {
-    return ["name"]
+  override class func primaryKey() -> String? {
+    return "itemId"
   }
 }

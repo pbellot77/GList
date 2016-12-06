@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RealmSwift
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
@@ -17,6 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   @IBOutlet weak var tableView: UITableView!
   
   let disposeBag = DisposeBag()
+  let realm = try? Realm()
   var items = [String]()
   
   override func viewDidLoad() {
