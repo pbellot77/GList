@@ -13,17 +13,25 @@ import RealmSwift
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
-  @IBOutlet weak var priceLabel: UILabel!
+  // MARK: Outlets
+  
+  @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var tableView: UITableView!
   
+  // MARK: Properties
+  
   let disposeBag = DisposeBag()
-  let realm = try? Realm()
   var items = [String]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    title = "GList"
+    dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .full, timeStyle: .none)
   }
+  
+  // MARK: TableView Datasource
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
@@ -36,6 +44,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     cell?.textLabel?.textColor = UIColor.lightGray
     return cell!
   }
+  
+  // MARK: TableView Delegate
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let selectedRow = tableView.cellForRow(at: indexPath)
@@ -59,12 +69,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
     @IBAction func addButton(_ sender: Any) {
-      
       let newItem = textField.text
       items.append(newItem!)
       textField.resignFirstResponder()
       textField.text = ""
-      textField.placeholder = "Enter a new item here"
       tableView.reloadData()
     }
-}
+}// end of class
