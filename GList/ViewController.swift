@@ -68,6 +68,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
   }
   
+  // MARK: Actions
+  
     @IBAction func addButton(_ sender: Any) {
       let newItem = textField.text
       items.append(newItem!)
