@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
     
     cell?.textLabel?.text = items[indexPath.row]
-    cell?.textLabel?.textColor = UIColor.lightGray
+    cell?.textLabel?.textColor = UIColor.gray
     return cell!
   }
   
