@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		1F6117BEC9D58F4BCB7F3BC8 /* Pods_GList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C523E693C3A9E0FD9C8B46 /* Pods_GList.framework */; };
 		96225BB6B0B9D9EF68BD1E54 /* Pods_GListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27350F3F5A7ACDD51A3563 /* Pods_GListTests.framework */; };
+		BA02EAD51DFC79AF00F68EB5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02EAD41DFC79AF00F68EB5 /* ListViewController.swift */; };
+		BA02EAD71DFC7A1D00F68EB5 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02EAD61DFC7A1D00F68EB5 /* SavedViewController.swift */; };
 		BA266D551DF722B100331186 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA266D541DF722B100331186 /* Item.swift */; };
 		BA35F2C41DE60C00006CFF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35F2C31DE60C00006CFF63 /* AppDelegate.swift */; };
-		BA35F2C61DE60C00006CFF63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35F2C51DE60C00006CFF63 /* ViewController.swift */; };
+		BA35F2C61DE60C00006CFF63 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35F2C51DE60C00006CFF63 /* EditViewController.swift */; };
 		BA35F2C91DE60C00006CFF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35F2C71DE60C00006CFF63 /* Main.storyboard */; };
 		BA35F2CB1DE60C00006CFF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA35F2CA1DE60C00006CFF63 /* Assets.xcassets */; };
 		BA35F2CE1DE60C00006CFF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35F2CC1DE60C00006CFF63 /* LaunchScreen.storyboard */; };
@@ -46,10 +48,12 @@
 		3FE178070FC5F07B35C09D5D /* Pods-GListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GListUITests/Pods-GListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C27350F3F5A7ACDD51A3563 /* Pods_GListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B7BFA27907B3B9CD52DC93 /* Pods-GListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GListTests/Pods-GListTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA02EAD41DFC79AF00F68EB5 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		BA02EAD61DFC7A1D00F68EB5 /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		BA266D541DF722B100331186 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BA35F2C01DE60C00006CFF63 /* GList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35F2C31DE60C00006CFF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA35F2C51DE60C00006CFF63 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		BA35F2C51DE60C00006CFF63 /* EditViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		BA35F2C81DE60C00006CFF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA35F2CA1DE60C00006CFF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA35F2CD1DE60C00006CFF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,6 +120,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA02EAD31DFC783400F68EB5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA35F2C51DE60C00006CFF63 /* EditViewController.swift */,
+				BA02EAD41DFC79AF00F68EB5 /* ListViewController.swift */,
+				BA02EAD61DFC7A1D00F68EB5 /* SavedViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		BA266D561DF722B900331186 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				BA35F2C31DE60C00006CFF63 /* AppDelegate.swift */,
-				BA35F2C51DE60C00006CFF63 /* ViewController.swift */,
+				BA02EAD31DFC783400F68EB5 /* ViewControllers */,
 				BA795E851DF4CD6000F243CF /* WalmartService.swift */,
 				BA266D561DF722B900331186 /* Model */,
 				BA35F2C71DE60C00006CFF63 /* Main.storyboard */,
@@ -449,9 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA02EAD71DFC7A1D00F68EB5 /* SavedViewController.swift in Sources */,
 				BA266D551DF722B100331186 /* Item.swift in Sources */,
-				BA35F2C61DE60C00006CFF63 /* ViewController.swift in Sources */,
+				BA35F2C61DE60C00006CFF63 /* EditViewController.swift in Sources */,
 				BA795E861DF4CD6000F243CF /* WalmartService.swift in Sources */,
+				BA02EAD51DFC79AF00F68EB5 /* ListViewController.swift in Sources */,
 				BA35F2C41DE60C00006CFF63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

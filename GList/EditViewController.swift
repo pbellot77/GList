@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EditViewController.swift
 //  GList
 //
 //  Created by Patrick Bellot on 11/23/16.
@@ -11,7 +11,9 @@ import RxSwift
 import RxCocoa
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class EditViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+  
+  /* This is the VC where we edit our shopping list. Either from a newly created list or from a previously saved list*/
   
   // MARK: Outlets
   
