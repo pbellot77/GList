@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8093B044FB6732459EB9C1A074794122'
+               BlueprintIdentifier = '3E649BC651D034743E1ED80067772A39'
                BlueprintName = 'Pods-GList'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-GList.framework'>

@@ -8,6 +8,8 @@ target 'GList' do
   pod 'RxSwift',    '~> 3.0'
   pod 'RxCocoa',    '~> 3.0'
   pod 'RealmSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 
   target 'GListTests' do
     inherit! :search_paths

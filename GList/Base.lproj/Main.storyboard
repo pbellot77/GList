@@ -116,7 +116,9 @@
                             <constraint firstItem="s02-jg-TFw" firstAttribute="leading" secondItem="DQy-Py-FKb" secondAttribute="leading" id="kpc-D3-e5K"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="60Q-ep-cEJ"/>
+                    <navigationItem key="navigationItem" id="60Q-ep-cEJ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="uGs-SP-MBF"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="Whk-lH-jZo" id="xZT-5j-YHS"/>
                         <outlet property="tableView" destination="DeQ-ul-Sqo" id="FlO-GK-yth"/>
@@ -125,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAg-bs-g2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="562"/>
+            <point key="canvasLocation" x="1330" y="476"/>
         </scene>
         <!--Saved View Controller-->
         <scene sceneID="lDc-cB-HgB">
@@ -139,27 +141,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="taT-kr-XaH">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VD-oh-Tzr">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SavedCell" id="jg4-i4-GW9">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jg4-i4-GW9" id="bnJ-9V-pvI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="taT-kr-XaH" firstAttribute="leading" secondItem="UVr-fN-m2M" secondAttribute="leading" id="5nf-l8-jzQ"/>
-                            <constraint firstAttribute="trailing" secondItem="taT-kr-XaH" secondAttribute="trailing" id="AhM-kh-eE8"/>
-                            <constraint firstItem="taT-kr-XaH" firstAttribute="top" secondItem="QkD-NI-yhO" secondAttribute="bottom" id="xyX-c8-18J"/>
-                            <constraint firstItem="yJt-it-AXl" firstAttribute="top" secondItem="taT-kr-XaH" secondAttribute="bottom" id="ydp-LB-jD2"/>
+                            <constraint firstAttribute="trailing" secondItem="9VD-oh-Tzr" secondAttribute="trailing" id="jVK-hM-JMa"/>
+                            <constraint firstItem="yJt-it-AXl" firstAttribute="top" secondItem="9VD-oh-Tzr" secondAttribute="bottom" id="mfR-Ej-QZ7"/>
+                            <constraint firstItem="9VD-oh-Tzr" firstAttribute="leading" secondItem="UVr-fN-m2M" secondAttribute="leading" id="nuy-Di-Uim"/>
+                            <constraint firstItem="9VD-oh-Tzr" firstAttribute="top" secondItem="QkD-NI-yhO" secondAttribute="bottom" constant="553" id="yyU-FO-7WA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jGV-ID-6fB">
@@ -170,10 +162,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bannerView" destination="9VD-oh-Tzr" id="ONR-f0-ZgM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOd-bk-6Cl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="562"/>
+            <point key="canvasLocation" x="641" y="477"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KhQ-em-kvU">
@@ -191,7 +186,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUo-ed-ltc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="562"/>
+            <point key="canvasLocation" x="-73" y="476"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="hOo-gH-0JI">

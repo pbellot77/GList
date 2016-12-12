@@ -7,21 +7,26 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class SavedViewController: UIViewController {
   
   /*This VC is a list of our last 5 grocery lists. Later on, we can add a barcode scanner or something that helps total up our shopping cart. Ads will be placed here*/
+    
+  @IBOutlet weak var bannerView: GADBannerView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+    bannerView.adUnitID = "ca-app-pub-3489095111043969/2887130537"
+    bannerView.rootViewController = self
+    bannerView.load(GADRequest())
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+  }
     
 
     /*
